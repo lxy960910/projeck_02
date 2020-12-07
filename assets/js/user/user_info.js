@@ -9,6 +9,7 @@ $(function () {
             }
         }
     })
+
     initUserInfo()
 
     // 初始化用户的基本信息
@@ -40,7 +41,7 @@ $(function () {
         e.preventDefault()
         // 发起 ajax 数据请求
         $.ajax({
-            mrthod: 'POST',
+            method: 'POST',
             url: '/my/userinfo',
             data: $(this).serialize(),
             success: function (res) {
@@ -53,4 +54,4 @@ $(function () {
             }
         })
     })
-}) 
+})
